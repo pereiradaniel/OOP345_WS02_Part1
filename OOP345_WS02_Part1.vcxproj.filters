@@ -18,5 +18,13 @@
     <ClCompile Include="w2_p1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="TimedEvents.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TimedEvents.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
