@@ -21,9 +21,15 @@
     <ClCompile Include="TimedEvents.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="StringSet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TimedEvents.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StringSet.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
