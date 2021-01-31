@@ -17,4 +17,9 @@ namespace sdds
 		te_start = chrono::steady_clock::now();
 	}
 
+	void TimedEvents::stopClock()
+	{
+		te_end = chrono::steady_clock::now();
+	}
+
 }
