@@ -12,5 +12,9 @@ namespace sdds
 		events->te_duration = {};
 	}
 
+	void TimedEvents::startClock()
+	{
+		te_start = chrono::steady_clock::now();
+	}
 
 }
