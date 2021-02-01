@@ -21,7 +21,7 @@ namespace sdds {
 		int i = 0;
 		while (!file.eof())
 		{
-			getline(file, _b, " ");
+			getline(file, _b, ' ');
 			++i;
 		}
 		ss_strings = new string[i + 1];
@@ -29,7 +29,7 @@ namespace sdds {
 		file.close();
 		file.open(new_string);
 		i = 0;
-		while (getline(file, _b, " "))
+		while (getline(file, _b, ' '))
 		{
 			ss_strings[i] = _b;
 			++i;
