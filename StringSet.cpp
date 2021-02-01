@@ -70,7 +70,7 @@ namespace sdds {
 		}
 	}
 
-	StringSet::StringSet(StringSet &&input_string)
+	/*StringSet::StringSet(StringSet &&input_string)
 	{
 		*this = move(input_string);
 	}
@@ -90,5 +90,5 @@ namespace sdds {
 			input_string.ss_string_count = 0;
 		}
 		return *this;
-	}
+	}*/
 }
