@@ -4,7 +4,7 @@ namespace sdds {
 
 	StringSet::StringSet()
 	{
-		ss_strings = nullptr;
+		ss_strings = {};
 		ss_string_count = 0;
 	}
 
@@ -61,7 +61,7 @@ namespace sdds {
 	string StringSet::operator[](size_t index) const
 	{
 		string temp_string;
-		if (index <= ss_string_count) {
+		if (index <= ss_string_count && index != 0) {
 			temp_string = ss_strings[index];
 		}
 		else {
