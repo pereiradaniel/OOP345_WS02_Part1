@@ -15,7 +15,7 @@ namespace sdds {
 	{
 	public:
 		string *ss_strings;		// strings
-		int ss_string_count;	// string counter
+		size_t ss_string_count;	// string counter
 
 		StringSet();	// A no argument default constructor.
 		~StringSet();
