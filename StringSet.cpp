@@ -42,13 +42,13 @@ namespace sdds {
 		*this = input_string;
 	}
 
-	StringSet& StringSet::operator=(const StringSet& string)
+	StringSet& StringSet::operator=(const StringSet& input_string)
 	{
-		ss_string_count = string.ss_string_count;
+		ss_string_count = input_string.ss_string_count;
 		ss_strings = new string[ss_string_count];
 		for (int i = 0; i < ss_string_count; ++i)
 		{
-			ss_strings[i] = string.ss_strings[i];
+			ss_strings[i] = input_string.ss_strings[i];
 		}
 		return *this;
 	}
