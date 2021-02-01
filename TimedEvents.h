@@ -22,7 +22,7 @@ namespace sdds
 		{
 			const char* te_name;	// a string with the event name
 			const char* te_time;	// a string with the predefined units of time
-			std::chrono::steady_clock::time_point te_duration;	// the duration of the event
+			std::chrono::steady_clock::duration te_duration;	// the duration of the event
 		} events[MAX_EVENTS];
 
 		TimedEvents();		// a default constructor
