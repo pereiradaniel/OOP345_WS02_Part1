@@ -58,17 +58,29 @@ namespace sdds {
 		return ss_string_count;
 	}
 
-	string StringSet::getEvent(int index)
+	string StringSet::operator[](size_t index) const
 	{
-		if (ss_strings != nullptr)
-		{
-			return string(ss_strings[index]);
+		string temp_string;
+		if (index <= ss_string_count) {
+			temp_string = ss_strings[index];
 		}
-		else
-		{
-			return "";
+		else {
+			temp_string = "";
 		}
+		return temp_string;
 	}
+
+	//string StringSet::getEvent(int index)
+	//{
+	//	if (ss_strings != nullptr)
+	//	{
+	//		return string(ss_strings[index]);
+	//	}
+	//	else
+	//	{
+	//		return "";
+	//	}
+	//}
 
 	/*StringSet::StringSet(StringSet &&input_string)
 	{

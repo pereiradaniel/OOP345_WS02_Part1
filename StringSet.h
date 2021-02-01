@@ -27,7 +27,8 @@ namespace sdds {
 		// StringSet& operator=(StringSet &&input_string);
 
 		size_t size();	// A query that returns the number of strings stored in the current object,
-		string getEvent(int index); // A query that returns a copy of the string at the index received.
+		std::string operator[](size_t index) const;
+		// string getEvent(int index); // A query that returns a copy of the string at the index received.
 	};
 }
 
