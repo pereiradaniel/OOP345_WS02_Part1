@@ -69,38 +69,4 @@ namespace sdds {
 		}
 		return temp_string;
 	}
-
-	//string StringSet::getEvent(int index)
-	//{
-	//	if (ss_strings != nullptr)
-	//	{
-	//		return string(ss_strings[index]);
-	//	}
-	//	else
-	//	{
-	//		return "";
-	//	}
-	//}
-
-	/*StringSet::StringSet(StringSet &&input_string)
-	{
-		*this = move(input_string);
-	}
-
-	StringSet& StringSet::operator=(StringSet&& input_string)
-	{
-		if (this != &input_string)
-		{
-			ss_string_count = input_string.ss_string_count;
-			ss_strings = new string[ss_string_count];
-			for (int i = 0; i < ss_string_count; ++i)
-			{
-				ss_strings[i] = input_string.ss_strings[i];
-			}
-			delete[] input_string.ss_strings;
-			input_string.ss_strings = nullptr;
-			input_string.ss_string_count = 0;
-		}
-		return *this;
-	}*/
 }

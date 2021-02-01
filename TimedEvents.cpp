@@ -47,5 +47,4 @@ namespace sdds
 
 		return os;
 	}
-
 }

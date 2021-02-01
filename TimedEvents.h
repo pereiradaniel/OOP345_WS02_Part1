@@ -31,7 +31,6 @@ namespace sdds
 		void addEvent(const char *event_name);	// a modifier that receives the address of a c-style null-terminated string that holds the name of the event.
 
 		friend ostream& operator<<(ostream& os, const TimedEvents& te);
-
 	};
 }
 
