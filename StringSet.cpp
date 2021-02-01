@@ -61,7 +61,7 @@ namespace sdds {
 	string StringSet::operator[](size_t index) const
 	{
 		string temp_string;
-		if (index <= ss_string_count && index != 0) {
+		if (index <= ss_string_count && ss_string_count > 0) {
 			temp_string = ss_strings[index];
 		}
 		else {
