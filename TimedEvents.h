@@ -16,13 +16,13 @@ namespace sdds
 	{
 	public:
 		int te_current_records;							// the number of records currently stored
-		chrono::steady_clock::time_point te_start;		// the start time for the current event
-		chrono::steady_clock::time_point te_end;		// the end time for the current event
+		std::chrono::steady_clock::time_point te_start;		// the start time for the current event
+		std::chrono::steady_clock::time_point te_end;		// the end time for the current event
 		struct	// an array of Events of structure type
 		{
 			const char* te_name;	// a string with the event name
 			const char* te_time;	// a string with the predefined units of time
-			chrono::steady_clock::time_point te_duration;	// the duration of the event
+			std::chrono::steady_clock::time_point te_duration;	// the duration of the event
 		} events[MAX_EVENTS];
 
 		TimedEvents();		// a default constructor
