@@ -24,11 +24,12 @@ namespace sdds
 
 	void TimedEvents::addEvent(const char* name)
 	{
+		auto duration = std::chrono::duration_cast<chrono::nanoseconds>(te_end - te_start);
 		if (te_current_records < MAX_EVENTS)
 		{
 			events[te_current_records].te_name = name;  // stores into the name attribute the C-style string at the pointed to address
 			events[te_current_records].te_time = "nanoseconds";	// stores "nanoseconds" as the units of time
-			events[te_current_records].te_duration = std::chrono::duration_cast<std::chrono::nanoseconds>(te_end - te_start);	// calculates and stores the duration of the event.
+			events[te_current_records].te_duration = duration;	// calculates and stores the duration of the event.
 			te_current_records++;	// increment current record of events!
 		}
 	}
